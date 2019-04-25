@@ -4,13 +4,13 @@
 
 2)I created a form with a file type button which will upload the image from your local repository.
 
-3)Then I have created another <div> for the predict button which should be visible after the image is uploaded.
+3)Then I have created another div tag for the predict button which should be visible after the image is uploaded.
 
 4)Then comes another two buttons for review as satisfied or not-satisfied which should be visible after getting the prediction results.
 
 5)Then comes the Try again button which should be visisble after the review from the users.
 
-6)Then comes the <span> tags for displaying the Results and reviews.
+6)Then comes the span tags for displaying the Results and reviews.
 
 
 # FRONTEND (base.html)
@@ -43,4 +43,25 @@
 
 
 #BACKEND(app.py)
+
+1)We need to import all the packages that are required during the preparation of our model.You can either buid your own model (or) Import the alreday trained models from keras  (or) Train with your features with the already imported  model.You can save your model any time and load it to make predictions.
+
+2)You need to define a flask app to make use of the flask properties.
+
+3)I am using the already trained model ResNet50 which we can import as "from keras.applications.resnet50 import ResNet50".
+
+4)Then I have created a function model_predict() which will load a particular image from the path(which we need to provide as argument along with the model we are using)preprocess the image in such a way that we can directly pass the value and predict the outcomes.
+
+5)Once we have the outcomes in our desired format we can return them as the RETURN value for the model_predict().
+
+6)I have a created a flask app.route(/) with GET method which will return my FRONTEND(index.html) as return value from my index().
+
+7)I have a created a flask app.route(/predict) with GET,POST methods which will take the image  and store it in the desired path and call the model_predict() with that specific path and decode the predictions along with their labels and propabailities and store the desired output into a variable and return that to my FRONTEND(index.html) as return value from my model_predict().
+
+8)I have a created a flask app.route(/satisfy) with GET,POST methods which will take the image and store it in the satisfied directory if the user clicks the satisfied button in the frontend page.
+
+9)I have a created a flask app.route(/notsatisfy) with GET,POST methods which will take the image and store it in the unsatisfied directory if the user clicks the not-satisfied button in the frontend page.
+
+ 
+
 
