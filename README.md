@@ -42,7 +42,7 @@
 
 
 
-#BACKEND(app.py)
+# BACKEND(app.py)
 
 1)We need to import all the packages that are required during the preparation of our model.You can either buid your own model (or) Import the alreday trained models from keras  (or) Train with your features with the already imported  model.You can save your model any time and load it to make predictions.
 
