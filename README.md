@@ -37,7 +37,7 @@
 
 11)On click Not satisfied button is should return some "...some message " and the pic should be saved in unsatisfied folder.
 
-12) If we click any of the above two buttons we need to show the Try again buttion which will reload the page.
+12) If I click any of the above two buttons I need to show the Try again buttion which will reload the page.
 
 
 
