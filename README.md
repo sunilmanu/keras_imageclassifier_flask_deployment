@@ -48,7 +48,7 @@
 
 2)You need to define a flask app to make use of the flask properties.
 
-3)I am using the already trained model ResNet50 which we can import as "from keras.applications.resnet50 import ResNet50".
+3)I am using the already trained model ResNet50 or VGG16 which we can import as "from keras.applications.resnet50 import ResNet50".
 
 4)Then I have created a function model_predict() which will load a particular image from the path(which we need to provide as argument along with the model we are using)preprocess the image in such a way that we can directly pass the value and predict the outcomes.
 
