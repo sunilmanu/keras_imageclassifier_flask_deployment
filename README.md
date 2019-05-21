@@ -1,6 +1,6 @@
 # FRONTEND (index.html)
 
-1)The title is "Image Classifier".
+1)The title of the html page is "Image Classifier".
 
 2)I created a form with a file type button which will upload the image from your local repository.
 
