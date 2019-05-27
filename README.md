@@ -10,7 +10,7 @@
 
 5)Then comes the Try again button which should be visisble after the review from the users.
 
-6)Then comes the span tags for displaying the Results and reviews.
+6)Then comes the span tags for displaying the Results and reviews outside.
 
 
 # FRONTEND (base.html)
